@@ -50,11 +50,11 @@
 </template>
 
 <script>
-import {request_remote,request_local} from "../request/index"
+import {request_remote,request_local} from "../../request"
 import { ElMessage } from 'element-plus'
 
 export default ({
-  name: "FPractice",
+  name: "PracticeF",
   data(){
     return {
       questionList: [],

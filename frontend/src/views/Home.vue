@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import Steps from "../components/steps"
+import Steps from "../components/Steps"
 
 export default {
   name: "Home",

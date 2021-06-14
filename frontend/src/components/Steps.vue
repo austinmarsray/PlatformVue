@@ -2,7 +2,7 @@
 <div>
   <el-steps :active="steps" finish-status="success" simple align-center>
     <el-step @click.native="signUp" title="报名" icon="el-icon-edit"></el-step>
-    <el-step @click.native="physical_examination" title="体检" icon="el-icon-s-order"></el-step>
+<!--    <el-step @click.native="physical_examination" title="体检" icon="el-icon-s-order"></el-step>-->
     <el-step @click.native="subject1" title="科目一" icon="el-icon-s-platform"></el-step>
     <el-step @click.native="subject2" title="科目二" icon="el-icon-truck"></el-step>
     <el-step @click.native="subject3" title="科目三" icon="el-icon-odometer"></el-step>
@@ -25,17 +25,11 @@ export default({
         signUp() {
 
         },
-        physical_examination() {
+        subject1() {
             if(this.steps < 1)
                 return;
 
-            console.log("体检");
-        },
-        subject1() {
-            if(this.steps < 2)
-                return;
-
-            this.$router.push("/home/practice1")
+            this.$router.push("/home/subjectf")
         },
         subject2() {
             if(this.steps < 3)
