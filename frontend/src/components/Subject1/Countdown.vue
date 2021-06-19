@@ -1,4 +1,5 @@
 <template>
+<!--  废弃方案-->
   <FlipDown :endDate="endTime" theme="2" type="3" @timeUp="timeOut"></FlipDown>
 </template>
 <script>

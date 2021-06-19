@@ -18,7 +18,7 @@ export default({
     name: "Steps",
     data() {
         return{
-            steps: 3,
+            steps: 5,
         }
     },
     methods:{
@@ -29,28 +29,28 @@ export default({
             if(this.steps < 1)
                 return;
 
-            this.$router.push("/home/subjectf")
+            this.$router.push("/home/subject1")
         },
         subject2() {
-            if(this.steps < 3)
+            if(this.steps < 2)
                 return;
 
             console.log("科目2");
         },
         subject3() {
-            if(this.steps < 4)
+            if(this.steps < 3)
                 return;
 
             console.log("科目3");
         },
         subject4() {
-            if(this.steps < 5)
+            if(this.steps < 4)
                 return;
 
-            console.log("科目4");
+          this.$router.push("/home/subject4")
         },
         application() {
-            if(this.steps < 6)
+            if(this.steps < 5)
                 return;
             
             console.log("申请驾照");

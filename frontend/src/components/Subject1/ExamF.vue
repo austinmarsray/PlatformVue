@@ -1,4 +1,5 @@
 <template>
+<!--  废弃方案-->
   <el-container>
     <el-main style="width: calc(100% - 300px);">
       <el-container>

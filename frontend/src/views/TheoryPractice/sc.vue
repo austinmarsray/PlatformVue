@@ -240,7 +240,8 @@ export default {
     },
 
     backRouter() {
-      this.$router.push("/theorypractice");
+      // this.$router.push("/theorypractice");
+      this.$router.back(-1);
     },
 
     clickupitem(i) {

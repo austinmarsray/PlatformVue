@@ -1,6 +1,23 @@
 /* eslint-disable */
 import { createRouter , createWebHistory} from "vue-router";
 
+
+const SignUpRoutes = [
+  {
+    path: 'audit-fail',
+    component: () => import('../views/SignUp/AuditFail')
+  },
+  {
+    path: 'waiting-audit',
+    component: () => import('../views/SignUp/WaitingAudit')
+  },
+  {
+    path: 'signup-info',
+    component: () => import('../views/SignUp/SignUpInfo')
+  },
+]
+
+
 const TheoryPracticeRoutes = [
   {
     path: 'home',
@@ -51,23 +68,21 @@ const TheoryPracticeRoutes = [
     component: () => import('../views/TheoryPractice/sc.vue')
   }
   ]
+
 const HomeChild = [
-  // {
-  //   path: '',
-  //   redirect: 'subjectf'
-  // },
   {
-    path: 'subjectf',
-    component: () => import('../components/Subject1/SubjectF')
+    path: 'signup',
+    component: () => import('../views/SignUp/SignUp'),
+    children: SignUpRoutes
   },
   {
-    path: 'practicef',
-    component: () => import('../components/Subject1/PracticeF')
+    path: 'subject1',
+    component: () => import('../views/Subject1/Subject1')
   },
   {
-    path: 'examf',
-    component: () => import('../components/Subject1/ExamF')
-  }
+    path: 'subject4',
+    component: () => import('../views/Subject4/Subject4')
+  },
 ]
 
 const routes = [

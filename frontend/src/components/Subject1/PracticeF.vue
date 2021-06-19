@@ -1,4 +1,5 @@
 <template>
+<!--  废弃方案-->
 <div class="practice-container">
   <el-row :gutter="10">
     <el-col :span="24">

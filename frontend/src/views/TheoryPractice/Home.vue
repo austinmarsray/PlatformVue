@@ -19,11 +19,11 @@
     <header>
       <span class="hd-left"></span>
       <span class="test-type" @click="showPickcarType=true">{{carType }}</span>
-      理论考试练习系统
+      <span  @click="backRoute">返回</span>
       <span class="test-subject" @click="showPicktestType=true">{{testType}}</span>
     </header>
     <div class="main">
-      <div class="title">驾考练习</div>
+      <div class="title">理论考试练习系统</div>
       <div class="mainCon">
         <div class="main-text mnks" @click="gomnks">模拟考试</div>
         <div class="main-text sxlx" @click="gosxlx">顺序练习</div>
@@ -51,6 +51,9 @@ export default {
     };
   },
   methods: {
+    backRoute() {
+      this.$router.back(-1);
+    },
     onConfirmcartype(value) {
       this.carType = value;
       this.showPickcarType = false;
