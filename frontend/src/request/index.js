@@ -8,11 +8,11 @@ export function request_local(config) {
   })
   return instance(config)
 }
-export function request_remote(config){
-  // 创建axios实例
-  const instance = axios.create({
-    baseURL: "http://api.apishop.net/common/driverLicense/",
-    timeout: 5000
-  })
-  return instance(config)
-}
+// export function request_remote(config){
+//   // 创建axios实例
+//   const instance = axios.create({
+//     baseURL: "http://api.apishop.net/common/driverLicense/",
+//     timeout: 5000
+//   })
+//   return instance(config)
+// }

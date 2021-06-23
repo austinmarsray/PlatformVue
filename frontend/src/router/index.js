@@ -15,6 +15,10 @@ const SignUpRoutes = [
     path: 'signup-info',
     component: () => import('../views/SignUp/SignUpInfo')
   },
+  {
+    path: 'school',
+    component: () =>  import('../views/SignUp/DrivingSchool')
+  }
 ]
 
 
